@@ -47,7 +47,7 @@ module Locomotive
             end
           end
           
-          paths << File.join(site_path, 'vendor/assets/bower_components', asset_type)
+          paths << File.join(site_path, 'vendor/assets/bower_components')
           
           return paths
         end
