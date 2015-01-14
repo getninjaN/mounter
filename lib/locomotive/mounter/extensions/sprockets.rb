@@ -46,6 +46,9 @@ module Locomotive
               paths << gem_assets_path if File.directory?(gem_assets_path)
             end
           end
+          
+          paths << File.join(site_path, 'vendor/assets/bower_components', asset_type)
+          
           return paths
         end
 
